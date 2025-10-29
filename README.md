@@ -200,7 +200,7 @@ python main.py
 
 ## File Structure
 
-
+```
 hospital-bed-system/
 ├── main.py                 # Application entry point
 ├── requirements.txt        # Python dependencies
@@ -218,7 +218,7 @@ hospital-bed-system/
 │   └── alos_calculator.py # ALOS calculations and predictions
 └── utils/
     └── csv_export.py      # CSV export functionality
-
+```
 
 ## Usage
 
