@@ -1,52 +1,176 @@
 # Hospital Bed Management System
 
-A comprehensive desktop application for managing hospital beds, patient admissions, and bed transfers with predictive analytics.
+A comprehensive desktop application built with Python and tkinter for efficient hospital bed management, patient tracking, and predictive analytics. The system provides real-time bed availability monitoring, patient admission tracking, and statistical analysis tools for hospital administrators and medical staff.
 
-## Features
+## 🌟 Key Features
 
-### User Roles
-- **Admin**: System configuration, audit log monitoring, bed management, analytics
-- **Doctor**: Patient admissions, bed transfers, discharge management
+### 👥 User Roles & Access Control
+- **Administrators**
+  - System configuration and monitoring
+  - Bed management and allocation
+  - Statistical analysis and reporting
+  - User activity audit logs
+- **Doctors**
+  - Patient admission management
+  - Bed transfer handling
+  - Discharge processing
+  - Patient history access
 
-### Core Features
-1. **Dual-Level Authentication**: Secure login system with role-based access
-2. **Patient Management**: Admit patients, manage medical history, track admissions
-3. **Bed Management**: Add beds, track bed status (available/occupied/maintenance)
-4. **Bed Transfers**: Transfer patients between beds with reason tracking
-5. **Search & Filter**:
-   - Doctors: Search by patient name, bed ID, admission reason
-   - Admins: Filter audit logs by user and date range
-6. **ALOS Analytics**: Calculate Average Length of Stay and predict discharge dates
-7. **Audit Logging**: Track all system actions for compliance
-8. **CSV Export**: Export audit logs, admissions, beds, and statistics
+### 💻 Core Functionality
+- **Secure Authentication**
+  - Role-based access control
+  - Encrypted password storage
+  - Session management
 
-### Dashboard Features
+- **Patient Management**
+  - New patient registration
+  - Medical history tracking
+  - Admission status monitoring
+  - Discharge processing
 
-#### Doctor Dashboard
-- View active admissions
-- Search and filter patients
-- Admit new patients
-- Discharge patients
-- Transfer patients to different beds
-- Real-time bed availability
+- **Bed Management**
+  - Real-time bed status tracking
+  - Multiple bed categories
+  - Maintenance scheduling
+  - Occupancy monitoring
 
-#### Admin Dashboard
-- **Audit Logs Tab**: View and filter system actions by user and date
-- **Bed Management Tab**: Add new beds, view all beds and their status
-- **Statistics Tab**: View system statistics and ALOS data
+- **Analytics & Reporting**
+  - Average Length of Stay (ALOS) calculation
+  - Predictive discharge date estimation
+  - Bed occupancy trends
+  - Interactive statistical graphs
+  - CSV export functionality
 
-## Installation
+### 📊 Dashboard Features
+
+#### 👨‍⚕️ Doctor Dashboard
+- Quick patient search and filtering
+- Bed availability view
+- Patient admission processing
+- Transfer management interface
+- Discharge handling
+
+#### 👨‍💼 Admin Dashboard
+- **Analytics**
+  - Interactive statistical graphs
+  - ALOS trends
+  - Bed utilization metrics
+  
+- **Management**
+  - Bed inventory control
+  - User activity monitoring
+  - System configuration
+
+## 🚀 Getting Started
 
 ### Prerequisites
-- Python 3.8+
-- MySQL Server
+- Python 3.11+ (3.11.9 recommended)
+- MySQL Server 8.0+
+- Windows OS (tested on Windows 10/11)
 
-### Setup
+### Required Python Packages
+- ttkbootstrap >= 1.17.0
+- Pillow >= 11.3.0
+- matplotlib >= 3.8.0
+- mysql-connector-python >= 8.2.0
+- mypy >= 1.7.0 (for development)
 
-1. **Install dependencies**:
-\`\`\`bash
-pip install -r requirements.txt
-\`\`\`
+### Installation Steps
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/nicku2/hospital-bed-management-system.git
+   cd hospital-bed-management-system
+   ```
+
+2. **Set Up Virtual Environment** (Recommended)
+   ```bash
+   python -m venv .venv
+   .venv\Scripts\activate
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Database Setup**
+   - Create a MySQL database
+   - Update database credentials in `database/connection.py`
+   - Run database initialization:
+     ```bash
+     python database/init_db.py
+     ```
+
+5. **Start the Application**
+   ```bash
+   python main.py
+   ```
+   Or use the provided `start.bat` file.
+
+## 🎯 Usage Guide
+
+### First-Time Setup
+1. Launch the application
+2. Log in with default admin credentials:
+   - Username: admin
+   - Password: admin123
+3. Change the default password
+4. Set up additional user accounts as needed
+
+### Regular Usage
+1. **For Doctors**
+   - Log in with doctor credentials
+   - View assigned patients
+   - Process admissions/discharges
+   - Manage bed transfers
+
+2. **For Administrators**
+   - Monitor bed utilization
+   - Review statistics and reports
+   - Manage system settings
+   - Export data as needed
+
+## 📝 Project Structure
+```
+hospital-bed-system/
+├── analytics/         # Analytics and calculations
+├── auth/             # Authentication and user management
+├── database/         # Database connections and schemas
+├── graphs/          # Generated statistical graphs
+├── ui/              # User interface components
+├── utils/           # Utility functions
+├── main.py          # Application entry point
+└── requirements.txt  # Python dependencies
+```
+
+## 🔒 Security Features
+- Encrypted password storage
+- Role-based access control
+- Session management
+- Audit logging of all actions
+- Input validation and sanitization
+
+## 📈 Future Enhancements
+- Mobile application integration
+- Real-time notifications
+- AI-powered bed allocation
+- Integration with hospital EHR systems
+- Advanced analytics dashboard
+
+## 🤝 Contributing
+Contributions are welcome! Please feel free to submit pull requests.
+
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👥 Authors
+- nicku2 (Project Lead)
+
+## 🙏 Acknowledgments
+- TTK Bootstrap for the modern UI components
+- Python community for excellent libraries
+- Contributors and testers
 
 2. **Initialize database**:
 \`\`\`bash
