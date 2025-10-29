@@ -165,7 +165,7 @@ Contributions are welcome! Please feel free to submit pull requests.
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 👥 Authors
-- nicku2 (Project Lead)
+- nick23r (Project Lead)
 
 ## 🙏 Acknowledgments
 - TTK Bootstrap for the modern UI components
@@ -200,7 +200,7 @@ python main.py
 
 ## File Structure
 
-\`\`\`
+
 hospital-bed-system/
 ├── main.py                 # Application entry point
 ├── requirements.txt        # Python dependencies
@@ -218,7 +218,7 @@ hospital-bed-system/
 │   └── alos_calculator.py # ALOS calculations and predictions
 └── utils/
     └── csv_export.py      # CSV export functionality
-\`\`\`
+
 
 ## Usage
 
