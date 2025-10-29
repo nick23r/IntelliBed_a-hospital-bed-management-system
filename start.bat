@@ -33,7 +33,7 @@ echo Starting application...
 echo.
 
 REM Run the application
-python main.py
+C:/Users/HP/Downloads/hospital-bed-system/.venv/Scripts/python.exe main.py
 
 REM Keep the window open if there's an error
 if %ERRORLEVEL% neq 0 (
