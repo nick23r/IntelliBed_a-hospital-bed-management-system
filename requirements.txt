@@ -1,0 +1,6 @@
+mysql-connector-python==8.2.0
+ttkbootstrap>=1.17.0
+Pillow>=11.3.0
+matplotlib>=3.8.0
+mypy>=1.7.0
+types-Pillow>=10.0.0
