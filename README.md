@@ -1,4 +1,4 @@
-# Hospital Bed Management System
+# IntelliBed, A Hospital Bed Management System
 
 A comprehensive desktop application built with Python and tkinter for efficient hospital bed management, patient tracking, and predictive analytics. The system provides real-time bed availability monitoring, patient admission tracking, and statistical analysis tools for hospital administrators and medical staff.
 
