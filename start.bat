@@ -1,5 +1,5 @@
 @echo off
-echo Hospital Bed Management System Startup
+echo IntelliBed Startup
 echo ====================================
 echo.
 
